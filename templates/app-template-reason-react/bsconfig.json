@@ -6,18 +6,12 @@
     {
       "dir": "src",
       "subdirs": [
-        {
-          "dir": "__tests__",
-          "type": "dev"
-        }
+        { "dir": "__tests__", "type": "dev" }
       ]
     }
   ],
   "package-specs": [
-    {
-      "module": "es6",
-      "in-source": true
-    }
+    { "module": "es6", "in-source": true }
   ],
   "suffix": ".bs.js",
   "namespace": true,
