@@ -15,16 +15,16 @@ module.exports = function () {
     setupFiles: [require.resolve("react-app-polyfill/jsdom")],
     setupFilesAfterEnv: setupTestsFile ? ["<rootDir>/jest.setup.js"] : [],
     testMatch: [
-      "<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}",
-      "<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}",
+      "<rootDir>/src/**/__tests__/**/*.js",
+      "<rootDir>/src/**/*.{spec,test}.js",
     ],
     transform: {
-      "^.+\\.(js|jsx|ts|tsx)$": path.resolve(
+      "^.+\\.js": path.resolve(
         __dirname,
         "jest/babelTransform.js"
       ),
       "^.+\\.css$": path.resolve(__dirname, "jest/cssTransform.js"),
-      "^(?!.*\\.(js|jsx|ts|tsx|css|json)$)": path.resolve(
+      "^(?!.*\\.(js|css|json)$)": path.resolve(
         __dirname,
         "jest/fileTransform.js"
       ),

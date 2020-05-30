@@ -12,8 +12,6 @@ const babelJest = require("babel-jest");
 module.exports = babelJest.createTransformer({
   presets: [
     "babel-preset-react-app",
-    "@babel/preset-react",
-    "@babel/preset-typescript",
   ],
   plugins: [
     ["@babel/plugin-syntax-import-meta"],
