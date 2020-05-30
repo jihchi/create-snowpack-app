@@ -1,5 +1,5 @@
 {
-  "name": "@snowpack/app-template-react",
+  "name": "@snowpack/app-template-reason-react",
   "version": "1.0.4",
   "license": "MIT",
   "keywords": [
@@ -9,20 +9,25 @@
     "access": "public"
   },
   "scripts": {
+    "build": "npm run re:build && npm run js:build",
+    "format": "bsrefmt --in-place 'src/**/*.{re.rei}'",
+    "js:build": "snowpack build",
+    "re:build": "bsb -make-world -clean-world",
+    "re:watch": "bsb -make-world -clean-world -w",
     "start": "snowpack dev",
-    "build": "snowpack build",
-    "format": "prettier --write 'src/**/*.{js,jsx}'",
-    "lint": "prettier --check 'src/**/*.{js,jsx}'",
     "test": "jest"
   },
   "devDependencies": {
+    "@glennsl/bs-jest": "^0.5.1",
     "@snowpack/app-scripts-react": "^1.0.4",
     "@testing-library/jest-dom": "^5.5.0",
     "@testing-library/react": "^10.0.3",
+    "bs-platform": "^7.3.2",
+    "bs-react-testing-library": "^0.7.2",
     "jest": "^25.4.0",
-    "prettier": "^2.0.0",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
+    "reason-react": "^0.8.0",
     "snowpack": "^2.0.0"
   },
   "gitHead": "795f4311d79a70cc9f19f21b512b7f8675d73f17"
