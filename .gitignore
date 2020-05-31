@@ -10,3 +10,8 @@ templates/*/_output
 templates/*/package-lock.json
 templates/*/node_modules
 snowpack.lock.json
+
+templates/*/.merlin
+templates/*/lib/
+templates/**/*.bs.js
+templates/**/*.cmt
