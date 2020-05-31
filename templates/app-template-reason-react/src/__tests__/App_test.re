@@ -4,7 +4,7 @@ open ReactTestingLibrary;
 
 test("renders learn react link", () => {
   render(<App />)
-  |> getByText(~matcher=`Str("learn react"), ~options=?None)
+  |> getByText(~matcher=`Str("Learn React"), ~options=?None)
   |> expect
   |> toMatchSnapshot
 });
