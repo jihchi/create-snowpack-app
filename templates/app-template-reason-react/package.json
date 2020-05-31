@@ -28,7 +28,7 @@
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "reason-react": "^0.8.0",
-    "snowpack": "^2.0.0"
+    "snowpack": "^2.1.0"
   },
   "gitHead": "795f4311d79a70cc9f19f21b512b7f8675d73f17"
 }
