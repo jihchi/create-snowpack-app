@@ -1,6 +1,6 @@
 {
   "name": "app-template-reason-react",
-  "version": "1.0.0-beta.1",
+  "version": "1.0.0-beta.2",
   "license": "MIT",
   "homepage": "https://github.com/jihchi/create-snowpack-app",
   "repository": {
@@ -9,6 +9,18 @@
   },
   "keywords": [
     "csa-template"
+  ],
+  "files": [
+    "babel.config.json",
+    "bsconfig.json",
+    "jest.config.js",
+    "jest.setup.js",
+    "README.md",
+    "snowpack.config.json",
+    "public/*",
+    "src/**/*.re",
+    "src/**/*.css",
+    "src/**/*.svg"
   ],
   "publishConfig": {
     "access": "public"
