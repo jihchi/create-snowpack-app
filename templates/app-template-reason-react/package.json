@@ -26,11 +26,8 @@
     "access": "public"
   },
   "scripts": {
-    "build": "npm run re:build && npm run js:build",
+    "build": "snowpack build",
     "format": "bsrefmt --in-place 'src/**/*.{re.rei}'",
-    "js:build": "snowpack build",
-    "re:build": "bsb -make-world -clean-world",
-    "re:watch": "bsb -make-world -clean-world -w",
     "start": "snowpack dev",
     "test": "jest"
   },
